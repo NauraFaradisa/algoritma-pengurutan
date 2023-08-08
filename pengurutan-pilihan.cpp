@@ -8,8 +8,7 @@ int Indeks_NilaiMin(int array[], int indeksAwal, int n)
 	int indeksMin = indeksAwal;
 	
 	for(int i = indeksMin + 1; i < n; i++){
-		if(array[i] < nilaiMin)
-        {
+		if(array[i] < nilaiMin){
 			indeksMin = i;
 			nilaiMin = array[i];
 		}	
