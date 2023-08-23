@@ -5,8 +5,8 @@ using namespace std;
 void Bubble_Sort(int A[], int n){
 	int i, j, buffer;
 	for(i=0; i < n; i++){
-		for(j=0; i<n; i++){
-			if(A[j]>A[j+i]){
+		for(j=0; j < n-i-1; j++){
+			if(A[j]>A[j+1]){
 				buffer=A[j];
 				A[j] = A[j+1];
 				A[j+1] = buffer;
